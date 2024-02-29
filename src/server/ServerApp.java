@@ -22,7 +22,7 @@ public class ServerApp {
                 System.out.println("Listening for client connection...");
                 Socket socket = ss.accept();
                 System.out.println("Connected!");
-                MinecraftEngine engine = new MinecraftEngine(socket);
+                MinesweeperEngine engine = new MinesweeperEngine(socket);
                 threadPool.submit(engine);
             }
         } catch (IOException e) {
